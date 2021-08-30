@@ -1,8 +1,0 @@
-/*put all global classes of css*/
-
-/*this class removes light blue border*/
-button.button:focus{
-    outline: none !important; /*to overide default property*/
-    box-shadow: none !important; /*removes box shadow*/
-}
-
