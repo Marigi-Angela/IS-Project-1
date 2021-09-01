@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Document</title>
+    <title>marketing web app</title>
     <link rel="stylesheet" href="styles/bootstap-377.min.css">
     <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/style.css">
@@ -135,13 +135,25 @@
                </ol><!-- carousel-indicators Finish -->
                
                <div class="carousel-inner"><!-- carousel-inner Begin -->
+               
+
+               <!-- 
+                   <?php 
+               $get_slides = "select * from slider LIMIT 0,1";
+               $run_slides = mysqli_query($con,$get_slides);
+               while($row_slides =mysqli_fetch_array($run_slides)){
+                   $slide_name = $row_slides['slide_name'];
+                   $slide_image = $row_slides['slide_image'];
+    
+                   ?> -->
+               
                    <div class="item active">
                        <!--change images from admin to consumer-->
-                       <img src="farmer/images/productimage1.jpg" alt="Slider Image 1">
+                       <img src="farmer/images/productimage1.jpg" alt="slide_image">
                    </div>
                    
                    <div class="item">
-                       <img src="farmer/images/product image2.jpg" alt="Slider Image 2">
+                       <img src="farmer/images/product image2.jpg" alt="slide_image">
                    </div>
                    
                    <div class="item">
@@ -151,7 +163,7 @@
                    <div class="item">
                        <img src="farmer/images/product image2.jpg" alt="Slider Image 4">
                    </div>
-                   
+               
                </div><!-- carousel-inner Finish -->
                
                <a href="#myCarousel" class="left carousel-control" data-slide="prev"><!-- left carousel-control Begin -->
@@ -238,13 +250,11 @@
         </div>
     </div>        
 
-    <!--error
+
     <?php
      include("includes/footer.php");
     ?>
-    -->
     
-
     <script src="js/jquery-331.min.js"></script>
     <script src="js/bootstrap-337.min.js"></script>
     
